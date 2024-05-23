@@ -66,10 +66,32 @@ VALUES(
 	'guarujá');
 	
 	
-	
-	
+INSERT INTO dentista (nomedentista, cro, especialidade, celular)
+VALUES(
+	'Luciana Joana Pietra Silva',
+	'555555RJ',
+	'Ortodontia',
+	'13995153447');
 
+INSERT INTO dentista (nomedentista, cro, especialidade, celular)
+VALUES(
+	'Luana Gabrielly Clarice Nunes',
+	'111111SP',
+	'Periodontia',
+	'13995112654');
 	
-
+INSERT INTO dentista (nomedentista, cro, especialidade, celular)
+VALUES(
+	'Marlene Jennifer Baptista',
+	'222222RJ',
+	'Geral',
+	'13991546847');
+	
+INSERT INTO dentista (nomedentista, cro, especialidade, celular)
+VALUES(
+	'Patrícia Marcela Duarte',
+	'333333MG',
+	'Implantodontia',
+	'13154687294');
 	
 	
