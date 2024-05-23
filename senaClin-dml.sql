@@ -154,3 +154,16 @@ GROUP BY MONTH(dataconsulta);
 
 SELECT tipoconsulta, COUNT(idconsulta) FROM consulta
 GROUP BY tipoconsulta;
+
+SELECT COUNT(idpaciente) FROM paciente;
+
+SELECT idconsulta, d.nomedentista, cro, dataconsulta, p.nomepaciente FROM consulta c
+INNER join dentista d ON c.iddentista = d.idDentista
+INNER JOIN paciente p ON c.idpaciente = p.idpaciente
+WHERE d.idDentista = 'implantodontia'
+ORDER BY dataconsulta DESC;
+
+
+SELECT COUNT(idconsulta) AS 'quantidade de consultas',d.idDentista  FROM consulta c
+INNER JOIN dentista d ON d.idDentista = c.iddentista
+GROUP BY c.iddentista
