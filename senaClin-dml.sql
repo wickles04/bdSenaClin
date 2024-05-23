@@ -132,3 +132,8 @@ WHERE  `idconsulta`=2;
 UPDATE `senaclin`.`consulta` 
 SET `tipoconsulta`='tratamento', `observaçao`='Tratamento será realizado em 10 consultas. Prioridade: Moderada. Remédio aplicado: Ponstan, caso sinta dores' 
 WHERE  `idconsulta`=1;
+
+SELECT nome, telefone FROM paciente
+WHERE cidade = 'santos'
+ORDER BY nome ASC;
+
