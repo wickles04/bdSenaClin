@@ -124,3 +124,7 @@ VALUES(
 UPDATE `senaclin`.`dentista` 
 SET `especialidade`='Geral', `celular`='13154681114' 
 WHERE  `idDentista`=4;
+
+UPDATE `senaclin`.`consulta` 
+SET `dataConsulta`='2024-06-04', `hora`='11:00:00' 
+WHERE  `idconsulta`=2;
