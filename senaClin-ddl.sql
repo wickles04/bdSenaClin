@@ -21,7 +21,7 @@ telefone CHAR(10),
 celular CHAR(11),
 CONSTRAINT ck_especialidade CHECK (especialidade= 'Ortodontia' OR especialidade= 'geral' OR especialidade= 'periodontia' OR especialidade= 'implantodontia')
 );
- 
+
  CREATE TABLE consulta (
  idconsulta INT AUTO_INCREMENT PRIMARY KEY,
  dataConsulta DATE NOT NULL ,
@@ -35,5 +35,9 @@ CONSTRAINT ck_especialidade CHECK (especialidade= 'Ortodontia' OR especialidade=
  );
 
 
+
+ALTER TABLE `paciente`
+ 
+ADD COLUMN `cidade` VARCHAR(80) NOT NULL;
 
 
