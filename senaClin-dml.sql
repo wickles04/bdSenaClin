@@ -141,5 +141,6 @@ SELECT d.nomedentista AS 'dentista', dataconsulta, p.nomepaciente AS 'paciente',
 inner JOIN consulta c ON d.idDentista = c.iddentista
 inner JOIN paciente p ON c.idpaciente = p.idpaciente;
 
-
+SELECT d.nomedentista AS 'dentista', dataconsulta, tipoconsulta FROM dentista d
+left JOIN consulta c ON d.idDentista = c.iddentista;
 
