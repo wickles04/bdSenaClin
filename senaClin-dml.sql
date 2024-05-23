@@ -144,3 +144,7 @@ inner JOIN paciente p ON c.idpaciente = p.idpaciente;
 SELECT d.nomedentista AS 'dentista', dataconsulta, tipoconsulta FROM dentista d
 left JOIN consulta c ON d.idDentista = c.iddentista;
 
+SELECT COUNT(iddentistas), especialidade FROM dentista 
+GROUP BY especialidade
+ORDER BY especialidade ASC
+
