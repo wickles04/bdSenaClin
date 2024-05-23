@@ -137,3 +137,9 @@ SELECT nome, telefone FROM paciente
 WHERE cidade = 'santos'
 ORDER BY nome ASC;
 
+SELECT d.nomedentista AS 'dentista', dataconsulta, p.nomepaciente AS 'paciente', p.telefone AS 'telefone do paciente' FROM dentista d
+inner JOIN consulta c ON d.idDentista = c.iddentista
+inner JOIN paciente p ON c.idpaciente = p.idpaciente;
+
+
+
