@@ -128,3 +128,7 @@ WHERE  `idDentista`=4;
 UPDATE `senaclin`.`consulta` 
 SET `dataConsulta`='2024-06-04', `hora`='11:00:00' 
 WHERE  `idconsulta`=2;
+
+UPDATE `senaclin`.`consulta` 
+SET `tipoconsulta`='tratamento', `observaçao`='Tratamento será realizado em 10 consultas. Prioridade: Moderada. Remédio aplicado: Ponstan, caso sinta dores' 
+WHERE  `idconsulta`=1;
