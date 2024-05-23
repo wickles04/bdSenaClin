@@ -94,4 +94,33 @@ VALUES(
 	'Implantodontia',
 	'13154687294');
 	
-	
+INSERT INTO consulta (dataconsulta, hora, tipoconsulta, idpaciente, iddentista)
+VALUES(
+	'2024-06-01',
+	'08:00:00',
+	'avaliação',
+	'1',
+	'1'
+);
+
+INSERT INTO consulta (dataconsulta, hora, tipoconsulta, idpaciente, iddentista)
+VALUES(
+	'2024-06-02',
+	'09:00:00',
+	'avaliação',
+	'2',
+	'3'
+);
+
+INSERT INTO consulta (dataconsulta, hora, tipoconsulta, idpaciente, iddentista)
+VALUES(
+	'2024-06-03',
+	'10:00:00',
+	'avaliação',
+	'3',
+	'3'
+);
+
+UPDATE `senaclin`.`dentista` 
+SET `especialidade`='Geral', `celular`='13154681114' 
+WHERE  `idDentista`=4;

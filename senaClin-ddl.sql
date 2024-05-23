@@ -30,6 +30,7 @@ CONSTRAINT ck_especialidade CHECK (especialidade= 'Ortodontia' OR especialidade=
  idpaciente INT NOT NULL,
  iddentista INT NOT NULL,
  observaçao VARCHAR(250),
+ CONSTRAINT CK_tipoconsulta CHECK (tipoconsulta = 'avaliação' OR tipoconsulta = 'tratamento'),
  CONSTRAINT FK_Consulta_Paciente FOREIGN KEY (idpaciente) REFERENCES paciente(idpaciente),
  CONSTRAINT FK_Consulta_Dentista FOREIGN KEY (idDentista) REFERENCES Dentista(idDentista)
  );
