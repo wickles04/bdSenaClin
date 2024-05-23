@@ -146,5 +146,9 @@ left JOIN consulta c ON d.idDentista = c.iddentista;
 
 SELECT COUNT(iddentistas), especialidade FROM dentista 
 GROUP BY especialidade
-ORDER BY especialidade ASC
+ORDER BY especialidade ASC;
+
+SELECT COUNT(idconsulta), MONTH(dataconsulta) FROM consulta
+WHERE MONTH(dataconsulta) = 6
+GROUP BY MONTH(dataconsulta);
 
